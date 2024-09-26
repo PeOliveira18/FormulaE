@@ -9,6 +9,10 @@ export default {
       colors:{
         fundo:{
           100: '#C8C8C8'
+        },
+        corTexto: {
+          100: '#00005A',
+          200: '#0000FF'
         }
       }
     },
