@@ -1,5 +1,5 @@
 import BtnMenu from "../BotaoMenu/btnMenu";
-import Modal from "../Modal/modal";
+import { Link } from "react-router-dom";
 
 function Ancoragem() {
     return (
@@ -8,18 +8,16 @@ function Ancoragem() {
                 <div className="flex md:flex h-14 md:h-10 md:p-0 items-center md:gap-0 gap-5">
                     <BtnMenu/>
                     <button className="h-14 border md:hidden"></button> 
-                    
-                    <img src="https://www.fiaformulae.com/resources/v4.22.11/i/elements/formula-e-logo-championship.svg" alt="Logo ABB" className="h-10"/>
+                    <Link to= '/home'><img src="https://www.fiaformulae.com/resources/v4.22.11/i/elements/formula-e-logo-championship.svg" alt="Logo ABB" className="h-10"/></Link>
                 </div>
                 <div className="flex gap-5 font-bold text-corTexto-100">
-                    <a href="" className="desaparece">Inicio</a>
+                    <Link to='/'><a href="" className="desaparece">Inicio</a></Link>
                     <a href="" className="desaparece">Novidades</a>
                     <a href="" className="desaparece">Proximas corridas</a>
                     <a href="" className="desaparece">Pilotos</a>
                     <a href="" className="desaparece">Pistas</a>
                 </div>
             </header>
-            <div className="divisor-horizontal"></div>
         </>
     );
 }

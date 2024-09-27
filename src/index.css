@@ -23,4 +23,5 @@
     .desaparece{
         @apply hidden md:block
     }
+
 }

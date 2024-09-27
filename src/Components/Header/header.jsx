@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 function Header() {
     return (  
         <>
             <header className="hidden md:flex justify-between h-14 items-center pl-12">
                 <div className="text-corTexto-100 flex items-center gap-5 font-bold">
-                    <a href="">O que e a formula E?</a>
+                    <Link to='/OQueFormulaE'><a href="">O que e a formula E?</a></Link>
                     <div className="divisor-vertical"></div>
                 </div>
                 <div className="text-corTexto-200 flex gap-6 items-center pr-5 font-bold">

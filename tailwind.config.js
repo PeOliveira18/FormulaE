@@ -1,3 +1,5 @@
+import gradient from '@material-tailwind/react/theme/components/timeline/timelineIconColors/gradient'
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -14,6 +16,9 @@ export default {
           100: '#00005A',
           200: '#0000FF',
           300: '#00FFFF'
+        },
+        backgroundImage: {
+          'custom-gradient': "url('../i/elements/bg-article-theme-default.svg'), linear-gradient(90deg, #00005a, #00f 49.48%, #0ff)"
         }
       }
     },

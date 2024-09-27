@@ -3,7 +3,7 @@ import bannerTickets from '../../images/banner-tickets.webp'
 function Venda() {
     return (  
         <div className="bg-corTexto-100 flex lg:justify-between lg:flex-row flex-col items-center gap-10 px-14 py-10 text-white font-bold lg:h-[550px] h-[800px]">
-            <div className='max-w-[880px] pr-12'>
+            <div className=' pr-12'>
                 <div className='lg:hidden flex relative'>
                     <img src={bannerTickets} alt="" />
                 </div>
