@@ -1,7 +1,7 @@
 function Download() {
     return (
         <div className="lg:flex justify-center text-left gap-36 mt-7 p-3">
-            <div className="flex flex-col sm:w-full">
+            <div className="flex flex-col">
                 <h1 className="xl:text-3xl text-2xl">BAIXE O APLICATIVO OFICIAL DA FORMULA E</h1>
                 <div className="flex flex-col sm:flex-row gap-0.5">
                     <div className="flex mt-3 max-w-[140px] h-12 bg-black text-white rounded-xl items-center justify-center cursor-pointer p-3">
@@ -31,7 +31,7 @@ function Download() {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col pl-3">
+            <div className="flex flex-col">
                 <h1 className="xl:text-3xl text-2xl">FACA PARTE DA COMUNIDADE DA FORMULA E</h1>
                 <div>
                     <button className="btn-efeito w-44">Registre de graca</button>
