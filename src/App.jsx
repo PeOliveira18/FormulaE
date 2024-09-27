@@ -15,8 +15,6 @@ function App() {
   return (
     <AppContainer>
       <Home/>
-      <FormulaE/>
-      <Season11/>
     </AppContainer>
   )
 }

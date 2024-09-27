@@ -1,5 +1,5 @@
 import Header from "../../Components/Header/header";
-import Ancoragem from "../../Components/Ancoragem/ancoragem";
+import Nav from "../../Components/Nav/nav";
 import Hero from "../../Components/Hero/hero";
 import SectionJogo from "../../Components/SectionJogo/sectionJogo";
 import Venda from "../../Components/VendaTickets/vendaTickets";
@@ -10,7 +10,7 @@ function Home() {
     return (
         <>
             <Header />
-            <Ancoragem />
+            <Nav/>
             <div className="divisor-horizontal"></div>
             <Hero />
             <SectionJogo />

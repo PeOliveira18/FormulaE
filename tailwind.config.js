@@ -10,16 +10,20 @@ export default {
     extend: {
       colors:{
         fundo:{
-          100: '#C8C8C8'
+          100: '#C8C8C8',
+          200: '#F5F5F5'
         },
         corTexto: {
           100: '#00005A',
           200: '#0000FF',
-          300: '#00FFFF'
+          300: '#00FFFF',
+          400: '#0F233B',
+          500: '#0F233B'
         },
-        backgroundImage: {
-          'custom-gradient': "url('../i/elements/bg-article-theme-default.svg'), linear-gradient(90deg, #00005a, #00f 49.48%, #0ff)"
-        }
+        degrade: {
+          'azulEscuro': '#000067',
+          'azulClaro': '#00E5FF'
+        }   
       }
     },
     fontFamily:{

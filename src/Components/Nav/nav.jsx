@@ -1,7 +1,7 @@
 import BtnMenu from "../BotaoMenu/btnMenu";
 import { Link } from "react-router-dom";
 
-function Ancoragem() {
+function Nav() {
     return (
         <>
             <header className="flex justify-between md:p-5 md:max-h-20 md:pl-12 pl-5 md:items-center font-bold text-lg">
@@ -13,7 +13,7 @@ function Ancoragem() {
                 <div className="flex gap-5 font-bold text-corTexto-100">
                     <Link to='/'><a href="" className="desaparece">Inicio</a></Link>
                     <a href="" className="desaparece">Novidades</a>
-                    <a href="" className="desaparece">Proximas corridas</a>
+                    <Link to='/ProximasCorridas'><a href="" className="desaparece">Proximas corridas</a></Link>
                     <a href="" className="desaparece">Pilotos</a>
                     <a href="" className="desaparece">Pistas</a>
                 </div>
@@ -22,4 +22,4 @@ function Ancoragem() {
     );
 }
 
-export default Ancoragem;
+export default Nav;

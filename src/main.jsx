@@ -7,6 +7,7 @@ import { RouterProvider } from 'react-router-dom'
 import FormulaE from './Pages/OQueFormulaE/FormulaE.jsx'
 import Home from './Pages/Home/home.jsx'
 import Season11 from './Pages/Season11/season11.jsx'
+import Corridas from './Pages/ProximasCorridas/corridas.jsx'
 
 
 const router = createBrowserRouter([
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: 'Season11',
     element: <Season11/>
+  },
+  {
+    path: 'ProximasCorridas',
+    element: <Corridas/>
   }
 ])
 

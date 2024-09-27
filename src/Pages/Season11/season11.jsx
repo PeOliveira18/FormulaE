@@ -1,5 +1,5 @@
 import { AppContainer } from "../../App";
-import Ancoragem from "../../Components/Ancoragem/ancoragem";
+import Nav from "../../Components/Nav/nav";
 import Header from "../../Components/Header/header";
 import styled from "styled-components";
 import foto from '../../images/fotoSeason.webp'
@@ -20,8 +20,8 @@ const Gradient = styled.div`
 function Season11() {
     return (
         <AppContainer>
-            <Header />
-            <Ancoragem />
+            <Header/>
+            <Nav/>
             <div className="divisor-horizontal"></div>
             <div className="mt-5 flex">
                 <Gradient />
