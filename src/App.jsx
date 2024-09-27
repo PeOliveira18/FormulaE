@@ -3,10 +3,11 @@ import Hero from "./Components/Hero/hero"
 import DentroNovidades from "./Components/DentroNovidades/dentroNovidades"
 import Footer from "./Components/Footer/footer"
 import Ancoragem from "./Components/Ancoragem/ancoragem"
-import Header from "./Components/Header2/header"
-import Banner from "./Components/BannerCalendario/banner"
+import Header from "./Components/Header/header"
+import Venda from "./Components/VendaTickets/vendaTickets"
+import SectionJogo from "./Components/SectionJogo/sectionJogo"
 
-const AppContainer = styled.div`
+export const AppContainer = styled.div`
   margin: 0;
   padding: 0;
   max-width: 100%;
@@ -20,7 +21,8 @@ function App() {
       <Header/>
       <Ancoragem/>
       <Hero/>
-      <Banner/>
+      <SectionJogo/>
+      <Venda/>
       <DentroNovidades/>
       <Footer/>
     </AppContainer>

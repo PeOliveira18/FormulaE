@@ -9,4 +9,18 @@
     .divisor-horizontal{
         @apply w-screen border
     }
+    .btn-efeito{
+        @apply bg-white hover:bg-blue-700 text-corTexto-100 font-bold py-2 px-4 rounded-full w-40 mt-5
+    }
+
+    .espaco-menu{
+        @apply text-corTexto-100 flex justify-between p-[18px]
+    }
+
+    .tamanhoArrow{
+        @apply h-[18px] w-[18px]
+    }
+    .desaparece{
+        @apply hidden md:block
+    }
 }
