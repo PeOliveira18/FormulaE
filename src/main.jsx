@@ -8,6 +8,7 @@ import FormulaE from './Pages/OQueFormulaE/FormulaE.jsx'
 import Home from './Pages/Home/home.jsx'
 import Season11 from './Pages/Season11/season11.jsx'
 import Corridas from './Pages/ProximasCorridas/corridas.jsx'
+import Pilotos from './Pages/Pilotos/pilotos.jsx'
 
 
 const router = createBrowserRouter([
@@ -30,7 +31,11 @@ const router = createBrowserRouter([
   {
     path: 'ProximasCorridas',
     element: <Corridas/>
-  }
+  },
+  {
+    path: 'Pilotos',
+    element: <Pilotos/>
+  },
 ])
 
 createRoot(document.getElementById('root')).render(

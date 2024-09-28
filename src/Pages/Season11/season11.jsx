@@ -12,8 +12,10 @@ const Gradient = styled.div`
     background-size: 100%;
     height: 650px;
     width: 125px;
-    display:flex;
-    grid-template-columns: 
+    @media (max-width: 1024px) {
+        width: 100%;
+        height: 300px;
+    }
 `
 
 
@@ -23,22 +25,23 @@ function Season11() {
             <Header/>
             <Nav/>
             <div className="divisor-horizontal"></div>
-            <div className="mt-5 flex">
-                <Gradient />
+            <div className="mt-5 flex flex-col lg:flex-row">
+                <Gradient/>
                 <div className="flex flex-col text-left">
-                    <div className=" pl-36 text-corTexto-100 font-bold flex flex-col gap-3">
-                        <h1 className="text-[40px] leading-9">Formula E announces Season 11 calendar as Miami returns and two races in Monaco</h1>
-                        <span className="flex items-center">Noticias
+                    <div className="lg:pl-36 pl-4 text-corTexto-100 font-bold flex flex-col gap-3">
+                        <h1 className="text-[40px] lg:text-[40px] leading-9">Formula E announces Season 11 calendar as Miami returns and two races in Monaco</h1>
+                        <span className="flex items-center text-sm lg:text-base">Noticias
                             <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="12" cy="12" r="2" fill="#000000" /></svg>  11 JUN 2024  <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="12" cy="12" r="2" fill="#000000" /></svg>  3 MINUTOS
+                                <circle cx="12" cy="12" r="2" fill="#000000" />
+                            </svg>  3 MINUTOS
                         </span>
-                        <p className="text-black font-light w-[660px]">Formula E has today announced its provisional calendar for Season 11 of the ABB FIA Formula E World Championship, with the largest number of races and locations set for a season, following validation of the FIA World Motorsport Council.</p>
+                        <p className="text-black font-light lg:w-[660px] w-full">Formula E has today announced its provisional calendar for Season 11 of the ABB FIA Formula E World Championship, with the largest number of races and locations set for a season, following validation of the FIA World Motorsport Council.</p>
                     </div>
-                    <div className="flex relative w-auto mt-5 -ml-24">
-                        <img src={foto} alt="Carros na pista" className="h-[600px] w-full" />
+                    <div className="flex relative w-auto mt-5 lg:-ml-24 -ml-32">
+                        <img src={foto} alt="Carros na pista" className="h-[600px] lg:h-[800px] w-full object-cover"/>
                     </div>
-                    <div className="max-w-[1200px] flex flex-col text-left mt-10 gap-4 text-lg pl-24">
+                    <div className="max-w-[1200px] flex relative flex-col text-left mt-10 gap-4 text-lg  lg:pl-24 pl-4 pr-24">
                         <p>Formula E will complete a 17-race season for the first time in its history spanning 11 iconic venues as it continues to pioneer all-electric racing. New race locations in Miami and Diriyah; a double-header of separate races in Monaco – a first for the Principality in any motorsport championship; a double-header of races in Tokyo; and the return of Jakarta complement the roster of other city venues.</p>
                         <p>The Season 11 campaign will begin in São Paulo on the 7 December 2024 following pre-season testing on 4-7 November 2024 in Valencia. It will be the first time the all-new GEN3 Evo race car will be put through its paces and tested in public, capable of 0-60mph in just 1.82 seconds - 36% faster than the current GEN3.</p>
                         <a href="" className="text-[#0000FF] underline">CALENDAR: Every race location set for Season 11</a>

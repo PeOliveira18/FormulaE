@@ -1,4 +1,4 @@
-import banner from '../../images/banner-season.webp';
+import { Link } from 'react-router-dom';
 
 function Banner() {
     return (
@@ -26,7 +26,7 @@ function Banner() {
                     <p className="md:text-lg text-base mt-3">
                         Agenda da Formula E para 2024/2025
                     </p>
-                    <button className="btn-efeito mt-5 md:mt-8">Descubra mais</button>
+                    <Link to= '/Season11'><button className="btn-efeito mt-5 md:mt-8">Descubra mais</button></Link>
                 </div>
             </div>
         </section>
