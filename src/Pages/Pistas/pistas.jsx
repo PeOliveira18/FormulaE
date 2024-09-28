@@ -19,12 +19,13 @@ function Pistas() {
     const pistas = [pista1, pista1, pista3, pista4, pista5]
     const [id, setId] = useState(0)
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setId((prev) => (prev +1) %pistas.length)
-        },3000)
-        return () => clearInterval(interval)
-    }, [pistas.lenght])
+    const proximaPista = () => {
+        setId((prev) => (prev + 1) % pistas.length)
+    }
+
+    const pistaAnterior = () => {
+        setId((prevId) => (prevId - 1 + pistas.length) % pistas.length);
+    };
 
     return (  
         <AppContainer>
@@ -34,6 +35,10 @@ function Pistas() {
             <div className="flex justify-center mt-3">Circuito de Berlin - Alemanha</div>
             <div className="flex mt-8 transition-transform duration 0.5s ease-in-out translate-x-0" id="carrosel">
                 <img src={pistas[id]} alt="" className="w-[500px] m-auto"/>
+            </div>
+            <div>
+                <button onClick={pistaAnterior} className="btn-efeito bg-red-500"></button>
+                <button onClick={proximaPista} className="btn-efeito bg-red-500"></button>
             </div>
             <DentroNovidades/>
             <Footer/>
