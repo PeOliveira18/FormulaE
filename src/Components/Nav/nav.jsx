@@ -19,7 +19,7 @@ function Nav() {
                         <a href="" className="desaparece">Proximas corridas</a>
                     </Link>
                     <Link to='/Pilotos'><a href="" className="desaparece">Pilotos</a></Link>
-                    <a href="" className="desaparece">Pistas</a>
+                    <Link to='/Pistas'><a href="" className="desaparece">Pistas</a></Link>
                 </div>
             </header>
         </>
