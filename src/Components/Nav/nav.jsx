@@ -14,7 +14,9 @@ function Nav() {
                     <Link to='/'><a href="" className="hidden md:block">
                         Inicio</a>
                     </Link>
-                    <a href="" className="hidden md:block">Novidades</a>
+                    <Link to='/Historia'>
+                        <a href="" className="hidden md:block">Historia</a>
+                    </Link>
                     <Link to='/ProximasCorridas'>
                         <a href="" className="hidden md:block">Proximas corridas</a>
                     </Link>

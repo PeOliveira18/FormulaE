@@ -10,6 +10,7 @@ import Season11 from './Pages/Season11/season11.jsx'
 import Corridas from './Pages/ProximasCorridas/corridas.jsx'
 import Pilotos from './Pages/Pilotos/pilotos.jsx'
 import Pistas from './Pages/Pistas/pistas.jsx'
+import Historia from './Pages/Historia/historia.jsx'
 
 
 const router = createBrowserRouter([
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
   {
     path: 'Pistas',
     element: <Pistas/>
+  },
+  {
+    path: 'Historia',
+    element: <Historia/>
   },
 ])
 

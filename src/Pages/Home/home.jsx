@@ -9,7 +9,7 @@ import Footer from "../../Components/Footer/footer";
 function Home() {
     return (
         <>
-            <Header />
+            <Header/>
             <Nav/>
             <div className="divisor-horizontal"></div>
             <Hero />

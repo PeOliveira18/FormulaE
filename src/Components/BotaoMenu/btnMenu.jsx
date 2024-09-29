@@ -12,7 +12,7 @@ function BtnMenu({openDrawer}) {
 
     return (  
         <>
-            <div className="md:hidden ">
+            <div className="md:hidden">
                 <Bars3Icon className="h-5 w-5 text-corTexto-300 cursor-pointer" onClick={toggleDrawer}/>   
             </div>
             {abreDrawer && <Modal toggleDrawer={toggleDrawer}/>}
