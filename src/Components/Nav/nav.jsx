@@ -11,15 +11,15 @@ function Nav() {
                     <Link to= '/home'><img src="https://www.fiaformulae.com/resources/v4.22.11/i/elements/formula-e-logo-championship.svg" alt="Logo ABB" className="h-10"/></Link>
                 </div>
                 <div className="flex gap-5 font-bold text-corTexto-100">
-                    <Link to='/'><a href="" className="desaparece">
+                    <Link to='/'><a href="" className="hidden md:block">
                         Inicio</a>
                     </Link>
-                    <a href="" className="desaparece">Novidades</a>
+                    <a href="" className="hidden md:block">Novidades</a>
                     <Link to='/ProximasCorridas'>
-                        <a href="" className="desaparece">Proximas corridas</a>
+                        <a href="" className="hidden md:block">Proximas corridas</a>
                     </Link>
-                    <Link to='/Pilotos'><a href="" className="desaparece">Pilotos</a></Link>
-                    <Link to='/Pistas'><a href="" className="desaparece">Pistas</a></Link>
+                    <Link to='/Pilotos'><a href="" className="hidden md:block">Pilotos</a></Link>
+                    <Link to='/Pistas'><a href="" className="hidden md:block">Pistas</a></Link>
                 </div>
             </header>
         </>

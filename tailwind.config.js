@@ -27,7 +27,12 @@ export default {
       }
     },
     fontFamily:{
-      newsreader: ['Newsreader','serif']
+      newsreader: ['Newsreader','serif'],
+    },
+    screens: {
+      'drawer1': '420px',
+      'drawer2': '335px',
+      'drawer3': '245px',
     }
     
   },

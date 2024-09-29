@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer components{
     .divisor-vertical{
         @apply h-14 border
@@ -20,8 +21,4 @@
     .tamanhoArrow{
         @apply h-[18px] w-[18px]
     }
-    .desaparece{
-        @apply hidden md:block
-    }
-
 }

@@ -13,7 +13,7 @@ function Header() {
                     <div className="divisor-vertical"></div>
                     <p>Conecte-se</p>
                     <div className="divisor-vertical"></div>
-                    <a href=""><img src="https://www.fiaformulae.com/resources/v4.22.11/i/elements/fia-logo.svg" alt="Logo FIA" /></a>
+                    <a href=""><img src="https://www.fiaformulae.com/resources/v4.22.11/i/elements/fia-logo.svg" alt="Logo FIA"/></a>
                 </div>
             </header>
             <div className="divisor-horizontal"></div>

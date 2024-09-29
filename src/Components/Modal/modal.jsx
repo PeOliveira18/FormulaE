@@ -1,15 +1,21 @@
 import { XMarkIcon } from "@heroicons/react/16/solid";
 import { ArrowRightIcon } from "@heroicons/react/16/solid";
+import styled from "styled-components";
+
+const drawerResponsive = `
+    @media (min-width: 350px){
+        g
+    }
+`
 
 
-function Modal() {
-    
+function Modal({toggleDrawer}) {
     return (
-        <div className="sidebar fixed top-0 bottom-0 -left-[540px] p-2 max-w-[540px] overflow-y-auto text-center bg-white">
+        <div className="sidebar fixed top-0 bottom-0 left-0 p-2 max-w-full overflow-y-auto text-center bg-white z-30">
             <div className="text-gray-100 text-xl">
                 <div className="p-2.5 mt-1 flex items-center justify-between">
                 <img src="https://www.fiaformulae.com/resources/v4.22.11/i/elements/formula-e-logo-championship.svg" alt="Logo ABB" className="h-10"/>
-                    <XMarkIcon className="cursor-pointer h-6 w-6 text-black"/>
+                    <XMarkIcon className="cursor-pointer h-6 w-6 text-black" onClick={toggleDrawer}/>
                 </div>
                 <div className="divisor-horizontal"></div>
             </div>
@@ -44,7 +50,7 @@ function Modal() {
                 <ArrowRightIcon className="tamanhoArrow"/>
             </div>
             <div className="divisor-horizontal"></div>
-            <div className="flex justify-around gap-16 pt-8">
+            <div className="grid drawer1:grid-cols-5 drawer2:grid-cols-4 drawer3:grid-cols-3 grid-cols-2 gap-16 pt-8">
                 <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7208)"/>
                     <path d="M21.2137 20.2816L21.8356 16.3301H17.9452V13.767C17.9452 12.6857 18.4877 11.6311 20.2302 11.6311H22V8.26699C22 8.26699 20.3945 8 18.8603 8C15.6548 8 13.5617 9.89294 13.5617 13.3184V16.3301H10V20.2816H13.5617V29.8345C14.2767 29.944 15.0082 30 15.7534 30C16.4986 30 17.2302 29.944 17.9452 29.8345V20.2816H21.2137Z" fill="white"/>
