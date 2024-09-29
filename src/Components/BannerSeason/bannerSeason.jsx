@@ -1,4 +1,5 @@
 import foto from '../../images/mapa.webp'
+import { Link } from 'react-router-dom';
 
 
 function BannerSeason() {
@@ -9,7 +10,9 @@ function BannerSeason() {
                     <p className="md:text-base text-sm">O calendario 2024/2025 esta aqui! Veja as datas das proximas corridas</p>                    
                 </div>
                 <div className="">
-                    <button className="btn-efeito bg-[#52528F] text-white">Descubra mais</button>
+                    <Link to='/ProximasCorridas'>
+                        <button className="btn-efeito bg-[#52528F] text-white">Descubra mais</button>
+                    </Link>
                 </div>  
             </div>
     )

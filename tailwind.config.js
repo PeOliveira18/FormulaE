@@ -27,7 +27,7 @@ export default {
       }
     },
     fontFamily:{
-      newsreader: ['Newsreader','serif'],
+      feSans: ['FE Sans','sans-serif'],
     },
     screens: {
       'drawer1': '420px',

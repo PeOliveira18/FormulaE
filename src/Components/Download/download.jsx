@@ -11,8 +11,8 @@ function Download() {
                             </svg>
                         </div>
                         <div>
-                            <div className="text-[10px] font-light">Download on the</div>
-                            <div className="text-sm font-bold font-sans">App Store</div>
+                            <div className="text-[10px] font-light"><a href="https://apps.apple.com/us/app/formula-e/id1055039653" target="_blank">Download on the</a></div>
+                            <div className="text-sm font-bold font-sans"><a href="https://apps.apple.com/us/app/formula-e/id1055039653" target="_blank">App Store</a></div>
                         </div>
                     </div>
                     <div className="flex mt-3 max-w-[150px] h-12 bg-black text-white rounded-lg items-center justify-center cursor-pointer p-3">
@@ -25,8 +25,8 @@ function Download() {
                             </svg>
                         </div>
                         <div>
-                            <div className="text-[10px] font-light">GET IT ON</div>
-                            <div className="text-sm font-bold font-sans">Google Play</div>
+                            <div className="text-[10px] font-light"><a href="https://play.google.com/store/apps/details?id=com.fiaformulae.formulae&pli=1" target="_blank">GET IT </a>ON</div>
+                            <div className="text-sm font-bold font-sans"><a href="https://play.google.com/store/apps/details?id=com.fiaformulae.formulae&pli=1" target="_blank">Google Play</a></div>
                         </div>
                     </div>
                 </div>

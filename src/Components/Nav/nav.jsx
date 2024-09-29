@@ -10,18 +10,42 @@ function Nav() {
                     <button className="h-14 border md:hidden"></button> 
                     <Link to= '/home'><img src="https://www.fiaformulae.com/resources/v4.22.11/i/elements/formula-e-logo-championship.svg" alt="Logo ABB" className="h-10"/></Link>
                 </div>
-                <div className="flex gap-5 font-bold text-corTexto-100">
-                    <Link to='/'><a href="" className="hidden md:block">
-                        Inicio</a>
+                <div className="flex gap-8 font-bold text-corTexto-100">
+                    <Link to='/'>
+                        <a href="" className="ancoragem group">
+                            <span>Inicio</span>
+                            <span className="hover-left"></span>
+                            <span className="hover-right"></span>
+                        </a>
                     </Link>
                     <Link to='/Historia'>
-                        <a href="" className="hidden md:block">Historia</a>
+                        <a href="" className="ancoragem group">
+                            <span>Historia</span>
+                            <span className="hover-left"></span>
+                            <span className="hover-right"></span>
+                        </a>
                     </Link>
                     <Link to='/ProximasCorridas'>
-                        <a href="" className="hidden md:block">Proximas corridas</a>
+                        <a href="" className="ancoragem group">
+                            <span>Proximas corridas</span>
+                            <span className="hover-left"></span>
+                            <span className="hover-right"></span>
+                        </a>
                     </Link>
-                    <Link to='/Pilotos'><a href="" className="hidden md:block">Pilotos</a></Link>
-                    <Link to='/Pistas'><a href="" className="hidden md:block">Pistas</a></Link>
+                    <Link to='/Pilotos'>
+                        <a href="" className="ancoragem group">
+                            <span>Pilotos</span>
+                            <span className="hover-left"></span>
+                            <span className="hover-right"></span>
+                        </a>
+                    </Link>
+                    <Link to='/Pistas'>
+                        <a href="" className="ancoragem group">
+                            <span>Pistas</span>
+                            <span className="hover-left"></span>
+                            <span className="hover-right"></span>
+                        </a>
+                    </Link>
                 </div>
             </header>
         </>

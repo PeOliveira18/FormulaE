@@ -14,11 +14,12 @@ function CardPilotos() {
                                 </div>
                                 <img src={props.time} alt={props.time} className="max-w-[100px] mt-4" />
                             </div>
-                            <div className="relative ml-14 flex-shrink-0">
+                            <div className="relative flex-shrink-0 flex">
                                 <div className={`absolute top-0 left-0 h-full w-full ${props.bgColor} z-0`} 
                                     style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)' }}>
                                 </div>
                                 <img src={props.corredor} alt={props.nome} className="w-[178px] h-[210px] z-10 relative"/>
+                                <p className="absolute top-1 right-2 text-3xl font-bold text-white">{props.numero}</p>
                             </div>
                         </div>
                         <div className="h-[1px] w-full bg-gray-200 mt-5"></div>

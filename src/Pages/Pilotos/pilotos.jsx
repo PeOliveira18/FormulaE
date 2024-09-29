@@ -13,7 +13,7 @@ function Pilotos() {
             <Header/>
             <Nav/>
             <BannerSeason/>
-            <div className="p-10 text-corTexto-100 font-bold text-5xl max-w-[600px]">
+            <div className="p-10 text-corTexto-100 font-bold text-5xl max-w-[650px]">
                 <h1>Motoristas de 2023-2024</h1>
             </div>
             <div className="divisor-horizontal"></div>
