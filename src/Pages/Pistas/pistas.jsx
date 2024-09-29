@@ -10,13 +10,13 @@ import pista3 from '../../images/shangai.webp'
 import pista4 from '../../images/monaco.png'
 import pista5 from '../../images/missano.webp'
 import { useState } from "react";
-import { useEffect } from "react";
-import { Carousel } from "nuka-carousel";
+import { ArrowRightCircleIcon, ArrowLeftCircleIcon} from "@heroicons/react/16/solid";
+
 
 
 function Pistas() {
 
-    const pistas = [pista1, pista1, pista3, pista4, pista5]
+    const pistas = [pista1, pista2, pista3, pista4, pista5]
     const [id, setId] = useState(0)
 
     const proximaPista = () => {
@@ -32,14 +32,13 @@ function Pistas() {
             <Header/>
             <Nav/>
             <BannerSeason/>
-            <div className="flex justify-center mt-3">Circuito de Berlin - Alemanha</div>
+            <div className="p-10 text-5xl text-corTexto-100 font-bold m-auto text-center">Circuito de Berlin - Alemanha</div>
             <div className="flex mt-8 transition-transform duration 0.5s ease-in-out translate-x-0" id="carrosel">
+                <ArrowLeftCircleIcon className="w-14 cursor-pointer" onClick={pistaAnterior}/>
                 <img src={pistas[id]} alt="" className="w-[500px] m-auto"/>
+                <ArrowRightCircleIcon className="w-14 cursor-pointer" onClick={proximaPista}/>
             </div>
-            <div>
-                <button onClick={pistaAnterior} className="btn-efeito bg-red-500"></button>
-                <button onClick={proximaPista} className="btn-efeito bg-red-500"></button>
-            </div>
+            
             <DentroNovidades/>
             <Footer/>
         </AppContainer>
