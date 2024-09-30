@@ -11,6 +11,8 @@ import Corridas from './Pages/ProximasCorridas/corridas.jsx'
 import Pilotos from './Pages/Pilotos/pilotos.jsx'
 import Pistas from './Pages/Pistas/pistas.jsx'
 import Historia from './Pages/Historia/historia.jsx'
+import Login from './Pages/Login/login.jsx'
+import Registro from './Pages/Registro/registro.jsx'
 
 
 const router = createBrowserRouter([
@@ -45,6 +47,14 @@ const router = createBrowserRouter([
   {
     path: 'Historia',
     element: <Historia/>
+  },
+  {
+    path: 'Login',
+    element: <Login/>
+  },
+  {
+    path: 'Registro',
+    element: <Registro/>
   },
 ])
 
