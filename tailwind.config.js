@@ -27,7 +27,7 @@ export default {
       }
     },
     fontFamily:{
-      feSans: ['FE Sans','sans-serif'],
+      montserrat: ['Montserrat','sans-serif'],
     },
     screens: {
       'drawer1': '420px',

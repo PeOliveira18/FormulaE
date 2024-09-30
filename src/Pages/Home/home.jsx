@@ -5,19 +5,20 @@ import SectionJogo from "../../Components/SectionJogo/sectionJogo";
 import Venda from "../../Components/VendaTickets/vendaTickets";
 import DentroNovidades from "../../Components/DentroNovidades/dentroNovidades";
 import Footer from "../../Components/Footer/footer";
+import { AppContainer } from "../../App";
 
 function Home() {
     return (
-        <>
+        <AppContainer>
             <Header/>
             <Nav/>
             <div className="divisor-horizontal"></div>
-            <Hero />
+            <Hero/>
             <SectionJogo />
             <Venda />
             <DentroNovidades />
             <Footer />
-        </>
+        </AppContainer>
     );
 }
 
