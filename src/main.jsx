@@ -13,6 +13,7 @@ import Pistas from './Pages/Pistas/pistas.jsx'
 import Historia from './Pages/Historia/historia.jsx'
 import Login from './Pages/Login/login.jsx'
 import Registro from './Pages/Registro/registro.jsx'
+import Conta from './Pages/Conta/conta.jsx'
 
 
 const router = createBrowserRouter([
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
   {
     path: 'Registro',
     element: <Registro/>
+  },
+  {
+    path: 'Conta',
+    element: <Conta/>
   },
 ])
 

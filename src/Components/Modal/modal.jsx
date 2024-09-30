@@ -1,15 +1,11 @@
 import { XMarkIcon } from "@heroicons/react/16/solid";
 import { ArrowRightIcon } from "@heroicons/react/16/solid";
-import styled from "styled-components";
-
-const drawerResponsive = `
-    @media (min-width: 350px){
-        g
-    }
-`
-
+import { UserCircleIcon } from "@heroicons/react/16/solid";
+import { Link } from "react-router-dom";
 
 function Modal({toggleDrawer}) {
+    const nomeLogado = localStorage.getItem('Nome')
+
     return (
         <div className="sidebar fixed top-0 bottom-0 left-0 p-2 max-w-full overflow-y-auto text-center bg-white z-30">
             <div className="text-gray-100 text-xl">
@@ -20,9 +16,24 @@ function Modal({toggleDrawer}) {
                 <div className="divisor-horizontal"></div>
             </div>
             <div className="flex gap-4 text-corTexto-200 items-center text-left font-bold">
-                <a href="">Registro</a>
-                <div className="divisor-vertical"></div>
-                <a href="Registro">Conecte-se</a>
+                {!nomeLogado ? (
+                    <>
+                        <Link to='?Registro'>
+                            <a href="">Registro</a>
+                        </Link>
+                        <div className="divisor-vertical"></div>
+                        <Link to='/Login'>
+                            <a href="Registro">Conecte-se</a>
+                        </Link>
+                    </>
+                ):(
+                    <Link to='/Conta'>
+                        <div className="flex gap-2 items-center cursor-pointer py-3">
+                            <UserCircleIcon className="w-5 h-5"/>
+                            <p>{nomeLogado}</p>
+                        </div>
+                    </Link>
+                )}
             </div>
             <div className="divisor-horizontal"></div>
             <div className="espaco-menu">
