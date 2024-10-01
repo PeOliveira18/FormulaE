@@ -1,27 +1,39 @@
-import { data } from 'autoprefixer'
 import foto from '../../images/registro-bg.jpg'
 import { Link, useNavigate } from 'react-router-dom';
+import Axios from 'axios';
+
 
 function Registro() {
     const navegacao = useNavigate()
+
     const handleSubmit = (event) => {
         event.preventDefault()
+
         const email = event.target.email.value
         const nome = event.target.nome.value
         const sobrenome = event.target.sobrenome.value
         const dataNascimento = event.target.date.value
         const senha = event.target.senha.value
 
+        Axios.post("http://localhost:5174/register",{
+            nome: nome,
+            sobrenome: sobrenome,
+            email: email,
+            nascimento: dataNascimento,
+            senha : senha
+        }).then((response) =>{
+            console.log(response)
+        })
+
         localStorage.setItem('Email',email)
         localStorage.setItem('Nome',nome)
         localStorage.setItem('Sobrenome',sobrenome)
         localStorage.setItem('Nascimento',dataNascimento)
         localStorage.setItem('Senha',senha)
-
-        event.target.reset()
-        alert('Registro realizado com sucesso')
-        navegacao('/')
         
+        alert('Registro realizado com sucesso')  
+        navegacao('/')
+        event.target.reset()
     }
 
     return (
@@ -50,7 +62,7 @@ function Registro() {
                     </div>
                     <div className="mb-4">
                         <label htmlFor="senha" className="block text-gray-800">Senha</label>
-                        <input type="password" id="senha" name="senha" className="input-cadastro" required placeholder='Insira de endereco de Email'/>
+                        <input type="password" id="senha" name="senha" className="input-cadastro" required placeholder='Insira sua senha'/>
                     </div>
                     <div className="flex items-center mt-8 mb-4">
                         <input id="termos" name="termos" type="checkbox" className="h-4 w-4 shrink-0 rounded cursor-pointer" required/>

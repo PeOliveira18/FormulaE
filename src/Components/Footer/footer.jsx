@@ -1,6 +1,7 @@
 import { MapPinIcon } from "@heroicons/react/16/solid";
 import { PhoneIcon } from "@heroicons/react/16/solid";
 import { EnvelopeIcon } from "@heroicons/react/16/solid";
+import { Link } from "react-router-dom";
 
 function Footer() {
     return (
@@ -9,10 +10,12 @@ function Footer() {
                 <div>
                     <h1 className="md:text-3xl text-xl mb-3">Conteudo</h1>
                     <div className="flex flex-col gap-6 pl-4 mt-6">
-                        <a href="">Politica de privacidade</a>
-                        <a href="">Politica de retorno</a>
-                        <a href="">Termos de Servico</a>
-                        <a href="">Contatos</a>
+                        <Link to='/Politica'>
+                            <a href="#">Politica de privacidade</a>
+                        </Link>
+                        <Link to='/Termos'>
+                            <a href="#">Termos de uso</a>
+                        </Link>
                     </div>
                 </div>
                 <div>

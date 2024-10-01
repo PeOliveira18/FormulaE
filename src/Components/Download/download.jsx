@@ -1,4 +1,8 @@
+import { Link } from "react-router-dom";
+
 function Download() {
+    const registroFeito = localStorage.getItem('Email')
+
     return (
         <div className="lg:flex justify-center text-left gap-36 mt-7 p-3">
             <div className="flex flex-col">
@@ -34,7 +38,15 @@ function Download() {
             <div className="flex flex-col">
                 <h1 className="xl:text-3xl text-2xl">FACA PARTE DA COMUNIDADE DA FORMULA E</h1>
                 <div>
-                    <button className="btn-efeito w-44">Registre de graca</button>
+                    {!registroFeito ? (
+                        <Link to='/Conta'>
+                            <button className="btn-efeito w-44">Registre de graca</button>
+                        </Link>
+                    ) :(
+                        <Link to='/Registro'>
+                            <button className="btn-efeito w-44">Registre de graca</button>
+                        </Link>
+                    )}
                 </div>
             </div>
         </div>

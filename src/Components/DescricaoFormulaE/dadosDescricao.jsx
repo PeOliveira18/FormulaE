@@ -8,22 +8,22 @@ import img4 from '../../images/img4.webp'
 export const dadosDescricao = [
     {
         foto: img1,
-        titulo: 'The most competitive line-up in motorsport',
-        descricao: 'Non-stop, edge-of-the-seat action.'
+        titulo: 'A escalação mais competitivo do desporto automóvel',
+        descricao: 'Ação ininterrupta, no limite do assento.'
     },
     {
         foto: img2,
-        titulo: 'Innovation and record-breaking acceleration',
-        descricao: 'Pinnacle of performance.'
+        titulo: 'Inovação e aceleração recorde',
+        descricao: 'O auge do desempenho.'
     },
     {
         foto: img3,
-        titulo: 'Electrifying entertainment in the biggest cities',
-        descricao: '11 global locations.'
+        titulo: 'Entretenimento eletrizante nas maiores cidades',
+        descricao: '11 locais globais.'
     },
     {
         foto: img4,
-        titulo: 'The race towards a cleaner future, faster',
-        descricao: 'Net Zero since day zero.'
+        titulo: 'A corrida para um futuro mais limpo, mais rápido',
+        descricao: 'Net Zero desde o dia zero.'
     },
 ]

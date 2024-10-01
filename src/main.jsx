@@ -14,6 +14,8 @@ import Historia from './Pages/Historia/historia.jsx'
 import Login from './Pages/Login/login.jsx'
 import Registro from './Pages/Registro/registro.jsx'
 import Conta from './Pages/Conta/conta.jsx'
+import Termos from './Pages/TermosUso/termos.jsx'
+import Politica from './Pages/Politica/politica.jsx'
 
 
 const router = createBrowserRouter([
@@ -60,6 +62,14 @@ const router = createBrowserRouter([
   {
     path: 'Conta',
     element: <Conta/>
+  },
+  {
+    path: 'Politica',
+    element: <Politica/>
+  },
+  {
+    path: 'Termos',
+    element: <Termos/>
   },
 ])
 

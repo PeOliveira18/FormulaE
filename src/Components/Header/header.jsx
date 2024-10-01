@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { UserCircleIcon } from "@heroicons/react/16/solid";
 
 function Header() {
-    const nomeLogado = localStorage.getItem('Nome')
+    const nomeSessionStorage = sessionStorage.getItem('Nome')
 
     return (
         <>
@@ -14,7 +14,7 @@ function Header() {
                     <div className="divisor-vertical"></div>
                 </div>
                 <div className="text-corTexto-200 flex gap-6 items-center pr-5 font-bold">
-                    {!nomeLogado ? (
+                    {!nomeSessionStorage ? (
                         <>
                             <Link to='/Registro'>
                                 <p className="cursor-pointer hover:text-corTexto-100">Registro</p>
@@ -28,7 +28,7 @@ function Header() {
                         <Link to='/Conta'>
                             <div className="flex gap-2 items-center cursor-pointer">
                                 <UserCircleIcon className="w-5 h-5" />
-                                <p>{nomeLogado}</p>
+                                <p>{nomeSessionStorage}</p>
                             </div>
                         </Link>
                     )}

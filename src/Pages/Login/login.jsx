@@ -1,19 +1,23 @@
 import { useNavigate } from 'react-router-dom';
 import foto from '../../images/login-bg.webp'
+import { useState } from 'react';
 
 
 function Login() {
 
     const navegacao = useNavigate()
+
     const handleLogin = (event) => {
         const email = event.target.email.value;
         const senha = event.target.senha.value;
 
         const emailRegistrado = localStorage.getItem('Email')
         const senhaRegistrada = localStorage.getItem('Senha')
+        const NomeRegistrado = localStorage.getItem('Nome')
 
         if(email === emailRegistrado && senha === senhaRegistrada){
             alert('Login sucedido')
+            sessionStorage.setItem('Nome',NomeRegistrado)
             navegacao('/')
 
         }else{

@@ -6,7 +6,7 @@ function DescricaoFormulaE() {
     return (  
         <>
         <div className="p-10 text-5xl text-corTexto-100">
-            <h1 className="font-bold">Formula E races are a high-speed game of chess with...</h1>
+            <h1 className="font-bold">As corridas de Fórmula E são um jogo de xadrez a alta velocidade com...</h1>
             <div className="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1">
                 {
                     dadosDescricao.map(props => (
