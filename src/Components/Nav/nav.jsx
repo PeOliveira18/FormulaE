@@ -18,6 +18,13 @@ function Nav() {
                             <span className="hover-right"></span>
                         </a>
                     </Link>
+                    <Link to='/Post'>
+                        <a href="" className="ancoragem group">
+                            <span>Fã do dia</span>
+                            <span className="hover-left"></span>
+                            <span className="hover-right"></span>
+                        </a>
+                    </Link>
                     <Link to='/Historia'>
                         <a href="" className="ancoragem group">
                             <span>Historia</span>

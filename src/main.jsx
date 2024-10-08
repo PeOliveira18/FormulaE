@@ -16,6 +16,7 @@ import Registro from './Pages/Registro/registro.jsx'
 import Conta from './Pages/Conta/conta.jsx'
 import Termos from './Pages/TermosUso/termos.jsx'
 import Politica from './Pages/Politica/politica.jsx'
+import Post from './Pages/FaDoDia/post.jsx'
 
 
 const router = createBrowserRouter([
@@ -70,6 +71,10 @@ const router = createBrowserRouter([
   {
     path: 'Termos',
     element: <Termos/>
+  },
+  {
+    path: 'Post',
+    element: <Post/>
   },
 ])
 
