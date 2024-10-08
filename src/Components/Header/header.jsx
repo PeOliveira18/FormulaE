@@ -9,7 +9,7 @@ function Header() {
             <header className="hidden md:flex justify-between h-14 items-center pl-12">
                 <div className="text-corTexto-100 hover:text-corTexto-200 flex items-center gap-5 font-bold">
                     <Link to='/OQueFormulaE'>
-                        <a href="">O que e a formula E?</a>
+                        <a href="">O que é a formula E?</a>
                     </Link>
                     <div className="divisor-vertical"></div>
                 </div>
