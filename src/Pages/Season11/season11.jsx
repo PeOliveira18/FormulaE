@@ -6,6 +6,7 @@ import foto from '../../images/fotoSeason.webp'
 import DentroNovidades from "../../Components/DentroNovidades/dentroNovidades";
 import Footer from "../../Components/Footer/footer";
 import video from '../../videos/VideoCalendario.mp4'
+import { Link } from "react-router-dom";
 
 const Gradient = styled.div`
     background-image: url(https://www.fiaformulae.com/resources/v4.22.11/i/elements/bg-article-theme-default.svg), linear-gradient(90deg, #00005a, #00f 49.48%, #0ff);
@@ -44,7 +45,9 @@ function Season11() {
                     <div className="max-w-[1200px] flex relative flex-col text-left mt-10 gap-4 text-lg  lg:pl-24 pl-4 pr-24">
                         <p>A Fórmula E vai completar uma temporada de 17 corridas pela primeira vez na sua história, abrangendo 11 locais emblemáticos, continuando a ser pioneira nas corridas totalmente eléctricas. Novos locais de corrida em Miami e Diriyah; uma rodada dupla de corridas separadas no Mónaco - a primeira para o Principado em qualquer campeonato de automobilismo; uma rodada dupla de corridas em Tóquio; e o retorno de Jacarta complementam a lista de outros locais da cidade.</p>
                         <p>A campanha da época 11 terá início em São Paulo, a 7 de dezembro de 2024, após os testes de pré-época realizados de 4 a 7 de novembro de 2024 em Valência. Será a primeira vez que o novo carro de corrida GEN3 Evo será testado em público, com uma capacidade de 0-60 mph em apenas 1,82 segundos - 36% mais rápido do que o atual GEN3.</p>
-                        <a href="" className="text-[#0000FF] underline">CALENDÁRIO: Todos os locais de corrida definidos para a 11ª temporada</a>
+                        <Link to='/ProximasCorridas'>
+                            <a href="" className="text-[#0000FF] underline">CALENDÁRIO: Todos os locais de corrida definidos para a 11ª temporada</a>
+                        </Link>
                         <p>Um novo local na Arábia Saudita acolherá a primeira corrida dupla da época, a 14 e 15 de fevereiro de 2025, enquanto a série regressa a Miami pela primeira vez desde a 1ª época, num local totalmente novo, a 12 de abril de 2025. O local do Homestead-Miami Speedway baseia-se na sua herança e no seu sucesso ao acolher emocionantes corridas da NASCAR e da IndyCar durante décadas.</p>
                         <p>Pela primeira vez na história do Principado, o Mónaco acolherá corridas de automóveis separadas e consecutivas no Circuito de Mónaco, dada a natureza competitiva e cheia de ação das corridas de Fórmula E.</p>
                         <p>Na sequência do E-Prix de Tóquio inaugural de enorme sucesso, em que as vias públicas da cidade mais populosa do mundo foram encerradas para um evento automóvel pela primeira vez, terá lugar uma dupla série de corridas a 17 e 18 de maio de 2025.</p>
