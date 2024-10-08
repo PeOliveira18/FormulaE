@@ -17,21 +17,16 @@ const db = mysql.createPool({
 app.use(cors())
 app.use(express.json())
 
-app.post("/login", (req, res) => {
-    const { email, senha } = req.body;
+app.post("/register",(req,res) =>{
+    const {nome} = req.body
+    const {sobrenome} = req.body
+    const {email} = req.body
+    const {nascimento} = req.body
+    const {senha} = req.body
 
-    let SQL = "SELECT nome FROM usuarios WHERE email = ? AND senha = ?";
-    db.query(SQL, [email, senha], (err, result) => {
-        if (err) {
-            console.error(err);
-            return res.status(500).send('Erro ao autenticar usuário');
-        }
-        if (result.length > 0) {
-            // Autenticação bem-sucedida
-            return res.status(200).json({ nome: result[0].nome });
-        } else {
-            // Credenciais inválidas
-            return res.status(401).send('Email ou senha incorretos');
-        }
-    });
-});
+    let SQL = "INSERT INTO usuarios ( nome, sobrenome, email, nascimento, senha) VALUES (?, ?, ?, ?, ?)"
+    db.query(SQL, [nome, sobrenome, email, nascimento, senha], (err,result) => {
+        console.log(err);
+        
+    })
+})
