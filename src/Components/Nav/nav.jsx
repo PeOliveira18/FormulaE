@@ -25,6 +25,13 @@ function Nav() {
                             <span className="hover-right"></span>
                         </a>
                     </Link>
+                    <Link to='/Vision'>
+                        <a href="" className="ancoragem group">
+                            <span>Vision FE</span>
+                            <span className="hover-left"></span>
+                            <span className="hover-right"></span>
+                        </a>
+                    </Link>
                     <Link to='/Historia'>
                         <a href="" className="ancoragem group">
                             <span>Historia</span>

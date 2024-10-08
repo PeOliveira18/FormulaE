@@ -12,7 +12,7 @@ function FormulaE() {
             <Header/>
             <Nav/>
             <div className="bg-corTexto-100 max-w-full text-white p-10">
-                <h1 className="text-5xl font-bold">O que e a Formula E?</h1>
+                <h1 className="text-5xl font-bold">O que é a Formula E?</h1>
                 <p className="text-base mt-5">An intro to all things Formula E. Strap in, you're about to discover the future of motorsport</p>
             </div>
             <DescricaoFormulaE/>

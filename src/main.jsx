@@ -17,6 +17,7 @@ import Conta from './Pages/Conta/conta.jsx'
 import Termos from './Pages/TermosUso/termos.jsx'
 import Politica from './Pages/Politica/politica.jsx'
 import Post from './Pages/FaDoDia/post.jsx'
+import Vision from './Pages/VisionFe/visions.jsx'
 
 
 const router = createBrowserRouter([
@@ -75,6 +76,10 @@ const router = createBrowserRouter([
   {
     path: 'Post',
     element: <Post/>
+  },
+  {
+    path: 'Vision',
+    element: <Vision/>
   },
 ])
 

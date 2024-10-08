@@ -5,7 +5,6 @@ import Venda from "../../Components/VendaTickets/vendaTickets";
 import DentroNovidades from "../../Components/DentroNovidades/dentroNovidades";
 import Footer from "../../Components/Footer/footer";
 import { AppContainer } from "../../App";
-import SectionTecnologia from "../../Components/SectionTecnologia/sectionTecnologia";
 
 function Home() {
     return (
@@ -14,7 +13,6 @@ function Home() {
             <Nav/>
             <div className="divisor-horizontal"></div>
             <Hero/>
-            <SectionTecnologia/>
             <Venda />
             <DentroNovidades />
             <Footer />
