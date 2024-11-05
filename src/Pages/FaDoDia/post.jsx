@@ -5,16 +5,29 @@ import Footer from "../../Components/Footer/footer";
 import Header from "../../Components/Header/header";
 import Nav from "../../Components/Nav/nav";
 import foto from '../../images/post.webp'
+import story from "../../images/InstagramPost.jpg"
 
 function Post() {
-    return (  
+    return (
         <AppContainer>
-            <Header/>
-            <Nav/>
-            <BannerSeason/>
-            <img src={foto} alt="Descricao Post" className="h-[700px] w-auto mt-5 m-auto"/>
-            <DentroNovidades/>
-            <Footer/>
+            <Header />
+            <Nav />
+            <BannerSeason />
+            <div className="flex flex-col lg:flex-row justify-center lg:justify-around mt-5 w-full h-auto">
+                <img
+                    src={foto}
+                    alt="Descrição Post"
+                    className="h-auto w-full max-w-md lg:h-[700px] lg:w-auto object-contain"
+                />
+                <img
+                    src={story}
+                    alt="Story Instagram"
+                    className="h-auto w-full max-w-md lg:w-auto object-contain mt-5 lg:mt-0"
+                />
+            </div>
+
+            <DentroNovidades />
+            <Footer />
         </AppContainer>
     );
 }
